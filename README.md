@@ -73,4 +73,12 @@ Usuario por defecto, admin, clave admin
 - http://34.217.90.120/gmscrudbeta/index.php/login
 - http://34.217.90.120/gmscrudbeta/index.php/login/manage_permissions/
 
+Para más información del WIKI del proyecto original basada en tabla de permisos
+
+https://github.com/portapipe/Login-GroceryCrud/wiki/Table-Permission-Management-(GRID)
+![alt tag](https://github.com/portapipe/Login-GroceryCrud/blob/master/permissions_management.png?raw=true)
+
+Para más información del WIKI del proyecto original basada en la administracón de usuarios
+https://github.com/portapipe/Login-GroceryCrud/wiki/Manage-the-users
+
 
