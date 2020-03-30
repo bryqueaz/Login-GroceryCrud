@@ -36,7 +36,7 @@ Es necesario cambiar las siguientes variables,
 - $config['sess_driver'] = 'database';  // debe ser database
 - $config['sess_save_path'] = 'ci_sessions'; //  debe ser ci_sessions
 
-**Crear la tabla para la base de datos, y la primary key**
+**Crear la tabla en la base de datos, y la primary key, esto es para el manejo de sesiones**
 
 ```
 CREATE TABLE IF NOT EXISTS `ci_sessions` (
