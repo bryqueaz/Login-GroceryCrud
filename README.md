@@ -48,9 +48,7 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 );
 
 ALTER TABLE ci_sessions ADD PRIMARY KEY (id);
-
 ```
-
 ### Paso #3 -  Configuración del  acceso a la base de datos
 
  Para ello se debe modificar el archivo de configuración de la conexión de la base de datos: database.php
@@ -64,5 +62,14 @@ ALTER TABLE ci_sessions ADD PRIMARY KEY (id);
 	- 'password' => 'gmscrudd4t4b4s3',
 	- 'database' => 'gmscrud',
 	- 'dbdriver' => 'mysqli',
+
+### Paso #4 -  Proceso de instalación
+
+Crear la tablas de usuarios usuarios y permisos, con solo ejecutar los siguientes link en el navegado:
+
+Usuario por defecto, admin, clave admin
+
+- http://34.217.90.120/gmscrudbeta/index.php/login
+- http://34.217.90.120/gmscrudbeta/index.php/login/manage_permissions/
 
 
