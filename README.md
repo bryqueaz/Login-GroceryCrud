@@ -36,6 +36,21 @@ Es necesario cambiar las siguientes variables,
 - $config['sess_driver'] = 'database';  // debe ser database
 - $config['sess_save_path'] = 'ci_sessions'; //  debe ser ci_sessions
 
+**Crear la tabla para la base de datos, y la primary key**
+
+```
+CREATE TABLE IF NOT EXISTS `ci_sessions` (
+        `id` varchar(128) NOT NULL,
+        `ip_address` varchar(45) NOT NULL,
+        `timestamp` int(10) unsigned DEFAULT 0 NOT NULL,
+        `data` blob NOT NULL,
+        KEY `ci_sessions_timestamp` (`timestamp`)
+);
+
+ALTER TABLE ci_sessions ADD PRIMARY KEY (id);
+
+```
+
 ### Paso #3 -  Configuración del  acceso a la base de datos
 
  Para ello se debe modificar el archivo de configuración de la conexión de la base de datos: database.php
