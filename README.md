@@ -12,7 +12,7 @@ Tiene la funcionalidad de Login/Logout basado en el proyecto de GroceryCrud.
 - CentOS Linux release 7.6.1810 (Core) 
 - MySQL
 - PHP 7.2.24
-- CodeIgniter, [Download](https://www.grocerycrud.com/downloads)
+- CodeIgniter, [Download grocerycrud](https://www.grocerycrud.com/downloads)
 
 
 ## Como configurar  
