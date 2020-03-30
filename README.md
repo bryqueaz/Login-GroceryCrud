@@ -24,7 +24,12 @@ Para ello es necesario copiar los siguientes archivos a su proyecto:
 - application/views/login.php
 - application/views/admin_page.php
 
-### Paso #2 -  Configurar la sesión a base de datos
+### Paso #2 -  Configurar el manejo de la sesión del usuario a nivel de base de datos
+
+ Para ello se debe modificar el archivo de configuración global config.php
+
+ - /application/config/config.php
+
 
 Es necesario cambiar las siguientes variables,  
 
