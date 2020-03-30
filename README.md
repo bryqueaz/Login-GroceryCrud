@@ -1,5 +1,8 @@
 # Login-GroceryCrud
 
+Tiene la funcionalidad de Login/Logout basado en el proyecto de GroceryCrud
+
+
 ![alt tag](https://github.com/portapipe/Login-GroceryCrud/blob/master/login_page.png?raw=true)
 ## Requerimientos
 - Apache httpd-2.4.6
