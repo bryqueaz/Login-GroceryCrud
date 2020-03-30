@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] = '';
-$config['base_url'] = 'http://34.217.90.120/gmscrudbeta/';
+$config['base_url'] = 'http://32.200.89.22/gmscrudbeta/';
 
 /*
 |--------------------------------------------------------------------------
