@@ -22,4 +22,5 @@ Para ello es necesario copiar los siguientes archivos a su proyecto
 - application/controllers/Login.php
 - application/models/Login_model.php
 - application/views/login.php
+- application/views/admin_page.php
 
