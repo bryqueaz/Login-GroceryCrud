@@ -122,7 +122,7 @@ class Login extends CI_Controller {
 		}
 	}
 
-public function users() {
+		public function users() {
 	
 				if(!$this->login_model->isLogged()){ redirect(base_url()."index.php/login"); return;}
 				$this->load->library('grocery_CRUD');
