@@ -122,26 +122,26 @@ class Login extends CI_Controller {
 		}
 	}
 
-public function users()
-{
-	if(!$this->login_model->isLogged()){ redirect(base_url()."index.php/login"); return;}
-	$this->load->library('grocery_CRUD');
-	$crud = new grocery_CRUD();
-	$crud->set_table('crud_users');
-	$crud->set_relation('permissions','crud_permissions','name');
-	$crud->set_subject('Users');
-	$crud->required_fields('username','password');
-	$crud->columns('username','password','permissions');
-	$crud->change_field_type('password', 'password');
-	$crud->unset_read()->unset_export()->unset_print();
-	$user_name = $this->login_model->username();
-	$user_id = $this->login_model->id();
-	$crud = $this->login_model->check($crud);
-	$output = $crud->render();
-	echo "<p> " . $user_name . " (" .  $user_id . ") "   .  " </p>";  
-	//$this->_example_output($output);
-	//or if you don't use the _example_output() function you can comment above and uncomment below
-	$this->load->view('admin_page.php',$output);  
+public function users() {
+	
+				if(!$this->login_model->isLogged()){ redirect(base_url()."index.php/login"); return;}
+				$this->load->library('grocery_CRUD');
+				$crud = new grocery_CRUD();
+				$crud->set_table('crud_users');
+				$crud->set_relation('permissions','crud_permissions','name');
+				$crud->set_subject('Users');
+				$crud->required_fields('username','password');
+				$crud->columns('username','password','permissions');
+				$crud->change_field_type('password', 'password');
+				$crud->unset_read()->unset_export()->unset_print();
+				$user_name = $this->login_model->username();
+				$user_id = $this->login_model->id();
+				$crud = $this->login_model->check($crud);
+				$output = $crud->render();
+				echo "<p> " . $user_name . " (" .  $user_id . ") "   .  " </p>";  
+				//$this->_example_output($output);
+				//or if you don't use the _example_output() function you can comment above and uncomment below
+				$this->load->view('admin_page.php',$output);  
 }
 
 
